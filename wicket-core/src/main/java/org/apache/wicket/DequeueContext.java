@@ -67,8 +67,8 @@ public final class DequeueContext
 	{
 		this.markup = markup;
 		this.skipFirst = skipFirst;
-		containers.push(root);
-		next=nextTag();
+		this.containers.push(root);
+		this.next=nextTag();
 	}
 	
 	/**
@@ -279,7 +279,7 @@ public final class DequeueContext
 	}
 
 	/**
-	 * Searches the container stack for a component that can be dequeud
+	 * Searches the container stack for a component that can be dequeude
 	 * 
 	 * @param tag
 	 * @return
